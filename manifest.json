@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Quick Note Pad on a Chrome Extension",
+  "description": "This extension can be used to make notes swiftly",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "db.png",
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "db.png",
+    "48": "db_48.png"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "index.html".
+ -->
+ <html>
+ <head>
+   <title>
+     Make your notes Quick and Easy
+   </title>
+   <style>
+   body {
+     font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+     font-size: 100%;
+   }
+   </style>
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+   <div id="myDIV" class="header" style="min-width:500px;">
+     <h2>My To Do List</h2>
+     <input type="text" id="myInput" placeholder="Title...">
+     <span onclick="newElement()" class="addBtn">Add</span>
+   </div>
+
+  <ul id="myUL">
+    <li>Hit the gym</li>
+    <li class="checked">Pay bills</li>
+    <li>Meet George</li>
+    <li>Buy eggs</li>
+    <li>Read a book</li>
+    <li>Organize office</li>
+  </ul>
+  <script src="index.js"></script>
+ </body>
+ </html>
